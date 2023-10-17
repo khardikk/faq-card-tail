@@ -1,9 +1,229 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
-  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-  height: 100vh;
+  min-height: 800px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(0deg, hsla(240, 73%, 65%, 1) 0%, hsla(257, 74%, 65%, 1) 50%, hsla(273, 75%, 66%, 1) 100%);
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
+.card {
+  width: 95%;
+  max-width: 920px;
+  height: 510px;
+  margin-left: 2.7rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 40px 35px -5px rgba(0, 0, 0, 0.25);
+}
+
+
+.card_image {
+  width: 100%;
+  min-width: 380px;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: 206% 197%;
+  background-position-x: -480px;
+  background-position-y: -330px;
+  background-repeat: no-repeat;
+}
+
+.card_image_mobile {
+  display: none;
+}
+
+.card_image_desktop {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100.3%;
+  background-position-x: -84px;
+  background-position-y: 132px;
+}
+
+.card_image_box_svg {
+  width: 150px;
+  height: 100%;
+  background-image: url(images/illustration-box-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  right: 75px;
+  top: 245px;
+  filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.25))
+
+}
+
+.card_info {
+  width: 100%;
+  min-width: 360px;
+  max-width: 450px;
+  height: 100%;
+  padding: 4rem 5rem 4rem .4rem;
+  transition: all .4s ease-in-out;
+}
+
+.card_info_item {
+  min-width: 295px;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card_info_title {
+  margin-bottom: 2.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card_info_item_title {
+  font-weight: 200;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.card_info_item_title:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+.card_info_item_para {
+  width: 312px;
+  display: none;
+  opacity: 0;
+  margin-top: .7rem;
+  font-weight: 200;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+
+.show_info {
+  display: block;
+  opacity: 1;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.card_info_item_icon {
+  width: 12px;
+  height: 8px;
+  margin-right: 12px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: all .18s ease-in-out;
+}
+
+.card_info_divider {
+  width: 100%;
+  margin: 1rem 0 .94rem 0;
+  border: 1px solid hsl(240, 5%, 93%);
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+
+  body {
+      overflow: auto;
+  }
+
+  .container {
+      padding: 0;
+      margin-top: 2rem;
+  }
+
+  .card {
+      width: 90vw;
+      margin-left: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-image: url(images/bg-pattern-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: 240px;
+      background-position: top;
+  }
+
+  .card_image {
+      background-image: none;
+      height: 80px;
+  }
+
+  .card_image_desktop {
+      display: none;
+  }
+
+  .card_image_box {
+      display: none;
+  }
+
+  .card_image_mobile {
+      display: block;
+      width: 240px;
+      height: 180px;
+      margin: -110px auto 0 auto;
+      background-image: url(images/illustration-woman-online-mobile.svg);
+      background-repeat: no-repeat;
+  }
+
+  .card_info {
+      min-width: 100%;
+      height: auto;
+      padding: 1.3rem;
+  }
+
+  .card_info_item {
+      width: 95%;
+      min-width: 280px;
+      margin: 0 auto;
+      padding: 0;
+  }
+
+  .card_info_item_icon {
+      margin: 0;
+  }
+
+  .card_info_title {
+      margin-top: 0;
+      text-align: center;
+  }
+
+  .card_info_item_para {
+      width: 90%;
+      min-width: 270px;
+  }
+}
