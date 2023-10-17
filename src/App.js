@@ -40,9 +40,12 @@ function App() {
   return (
     <div className="container">
       <div className="card">
+        {/* image background -> desktop */}
         <div className="card_image">
+          {/* main images -> desktop and mobile */}
           <div className="card_image_mobile"></div>
           <div className="card_image_desktop">
+            {/* box svg  */}
             <div className="card_image_box_svg"></div>
           </div>
         </div>
@@ -55,7 +58,7 @@ function App() {
               className={`card_info_item ${activeItem === index ? 'active' : ''}`}
               onClick={() => toggleAccordion(index)}
             >
-              <h2 className={`card_info_item_title ${activeItem === index ? 'bolder' : ''}`}>
+              <h2 className={`card_info_item_title ${activeItem === index ? 'bold' : ''}`}>
                 {item.question}
               </h2>
               <img

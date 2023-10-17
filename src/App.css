@@ -112,7 +112,7 @@ body {
   color: hsl(14, 88%, 65%);
 }
 
-.bolder {
+.bold {
   font-weight: 600;
 }
 
@@ -146,13 +146,13 @@ body {
 
 .rotate {
   transform: rotate(180deg);
-  transition: all .18s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 .card_info_divider {
   width: 100%;
-  margin: 1rem 0 .94rem 0;
-  border: 1px solid hsl(240, 5%, 93%);
+  margin: 1rem 0 .96rem 0;
+  border: 0.5px solid hsl(240, 1%, 86%);
 }
 
 /* MEDIA QUERY */
@@ -164,7 +164,7 @@ body {
 
   .container {
       padding: 0;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
   }
 
   .card {
