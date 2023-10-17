@@ -11,9 +11,9 @@ This project is a solution to the [FAQ accordion card challenge on Frontend Ment
 - [Built With](#built-with)
 - [What I Learned](#what-i-learned)
 - [Continued Development](#continued-development)
-- [Useful Resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Installation](#install)
+
 
 ## Overview
 
@@ -27,23 +27,24 @@ The challenge involved creating an FAQ accordion card where users can:
 
 ### Screenshot
 
-![Screenshot](./screenshot.jpg)
+![Screenshot]![image](https://github.com/khardikk/faq-card-tail/assets/64458111/f5b1891c-0b04-46ad-b7f6-ca214f8df7a6)
+![Hover state image](https://github.com/khardikk/faq-card-tail/assets/64458111/3a13b5dd-638a-4e09-b5ce-6e4d0b256847)
+
+
 
 ### Links
 
 - [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://faq-component-react-hardikk.netlify.app/)
 
 ## Built With
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JavaScript library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 ## What I Learned
 
@@ -52,6 +53,7 @@ During this project, I learned:
 - How to create a responsive accordion card using React.
 - How to implement hover states for interactive elements.
 - How to structure and style a complex card layout.
+- How to use React states to make the interactive functionality.
 
 ## Continued Development
 
@@ -61,24 +63,15 @@ In future projects, I plan to focus on:
 - Exploring new front-end libraries and frameworks.
 - Enhancing my UI/UX design skills.
 
-## Useful Resources
-
-- [Example resource 1](https://www.example.com) - This resource helped me with a specific challenge. I found it very insightful and plan to apply this knowledge in future projects.
-- [Example resource 2](https://www.example.com) - This article helped me understand a complex concept. I highly recommend it to anyone learning the same concept.
 
 ## Author
 
-- [Your Name](https://www.your-site.com)
+- [Hardikk Kamboj](https://hardikkkamboj.netlify.app/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-I'd like to acknowledge anyone who supported me in completing this project. Whether it was through collaboration or inspiration from other solutions, your contributions were valuable.
-
-Feel free to remove or modify any sections as needed, and don't forget to replace the placeholders with your actual links and information.
+- Twitter - [@Hdkamboj](https://twitter.com/HdKamboj)
 
 
+## Install
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
